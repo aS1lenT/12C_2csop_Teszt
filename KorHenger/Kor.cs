@@ -22,12 +22,12 @@ namespace KorHenger
 
         private double kalkKerulet(double r)
         {
-            return 2 * r * Math.PI;
+            return Math.Round(2 * r * Math.PI, 2);
         }
 
         private double kalkTerulet(double r)
         {
-            return Math.Pow(r, 2) * Math.PI;
+            return Math.Round(Math.Pow(r, 2) * Math.PI, 2);
         }
 
         public double GetSugar() { return this.sugar;}
@@ -41,7 +41,7 @@ namespace KorHenger
 
         private void setDatas(double r)
         {
-            this.sugar;
+            this.sugar = r;
             this.kerület = kalkKerulet(r);
             this.terület = kalkTerulet(r);
         }
