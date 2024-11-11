@@ -11,10 +11,11 @@ namespace KorHenger
         //Az osztály feladata egy kör területének és kerületének kiszámítása
 
         //Osztályváltozók
-        private double sugar, kerület, terület;
+        protected double sugar, kerület, terület;
 
         //Konstruktorok
         public Kor() { }
+
         public Kor(double r)
         {
             setDatas(r);
@@ -44,6 +45,30 @@ namespace KorHenger
             this.sugar = r;
             this.kerület = kalkKerulet(r);
             this.terület = kalkTerulet(r);
+        }
+    }
+
+    class Henger : Kor
+    {
+        // Osztályváltozók
+       private double térfogat, magasság;
+
+        // Konstruktor
+        public Henger(double s, double m)
+        {
+            // Változók beállítása
+            this.sugar = s;
+            this.magasság = m;
+
+            // Számítások elvégzése
+            GetKerulet();
+            GetTerulet();
+            this.térfogat = this.terület * this.magasság;
+        }
+
+        public double GetTérfogat()
+        {
+            return this.térfogat;
         }
     }
 }
