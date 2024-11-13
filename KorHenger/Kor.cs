@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KorHenger
+namespace KörHenger
 {
     class Kör
     {
@@ -41,13 +41,14 @@ namespace KorHenger
 
         public double GetKerület()
         {
-            return 2 * r * Math.PI;
+            return this.kerület;
         }
 
         public double GetSugár()
         {
-            return Math.Pow(r, 2) * Math.PI;
+            return this.sugar;
         }
+    }
 
     class Henger : Kör
     {
@@ -70,9 +71,7 @@ namespace KorHenger
 
         public double GetTérfogat()
         {
-            this.sugar;
-            this.kerület = kalkKerulet(r);
-            this.terület = kalkTerulet(r);
+            return this.térfogat;
         }
 
     }

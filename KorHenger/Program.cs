@@ -4,35 +4,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KorHenger
+namespace KörHenger
 {
     class Program
     {
         static void Main(string[] args)
         {
             // 1. példány
-            Kor k1 = new Kor();
+            Kör k1 = new Kör();
             k1.SetSugar(15);
-            k1.GetTerulet();
-            k1.GetKerulet();
+            k1.SetTerület();
+            k1.SetKerület();
 
             kiír(k1);
-            
 
-            //2. példány
-            Kor k2 = new Kor(58);
-            k2.GetKerulet();
-            k2.GetTerulet();
+            // 2. példány
+            Kör k2 = new Kör(58);
+            k2.SetKerület();
+            k2.SetTerület();
 
             kiír(k2);
 
             Console.ReadKey();
+        }
 
-        }
-            private static void kiír(Kor k)
+        private static void kiír(Kör k)
         {
-            Console.WriteLine($"A {k.GetSugar()} sugarú kör kerülete: {k.GetKerulet()}, területe: {k.GetTerulet()}.");
+            Console.WriteLine($"A {k.GetSugár()} sugarú kör kerülete: {k.GetKerület()}, területe: {k.GetTerület()}.");
         }
-        
     }
 }
