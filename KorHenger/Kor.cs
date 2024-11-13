@@ -41,14 +41,13 @@ namespace KorHenger
 
         public double GetKerület()
         {
-            return this.kerület;
+            return 2 * r * Math.PI;
         }
 
         public double GetSugár()
         {
-            return this.sugar;
+            return Math.Pow(r, 2) * Math.PI;
         }
-    }
 
     class Henger : Kör
     {
@@ -71,7 +70,9 @@ namespace KorHenger
 
         public double GetTérfogat()
         {
-            return this.térfogat;
+            this.sugar;
+            this.kerület = kalkKerulet(r);
+            this.terület = kalkTerulet(r);
         }
 
     }
