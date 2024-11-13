@@ -14,7 +14,7 @@ namespace KorHenger_UnitTest
             double sugár = 5;
             Kör kör = new Kör(sugár);
             kör.SetKerület();
-            double 
+            double vártEredm = 31.4;
             // Act - Végrehajtás
 
             // Assert - Kiértékelés
