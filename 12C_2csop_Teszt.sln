@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KorHenger", "KorHenger\KorH
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KorHenger-Test", "KorHenger-Test\KorHenger-Test.csproj", "{CBBFC27E-8A7A-40B9-8B11-94D48FBEB08C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KorHenger_UnitTest", "KorHenger_UnitTest\KorHenger_UnitTest.csproj", "{D22CD96F-E970-4B36-8978-B1D876883912}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{CBBFC27E-8A7A-40B9-8B11-94D48FBEB08C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBBFC27E-8A7A-40B9-8B11-94D48FBEB08C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBBFC27E-8A7A-40B9-8B11-94D48FBEB08C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D22CD96F-E970-4B36-8978-B1D876883912}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D22CD96F-E970-4B36-8978-B1D876883912}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D22CD96F-E970-4B36-8978-B1D876883912}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D22CD96F-E970-4B36-8978-B1D876883912}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

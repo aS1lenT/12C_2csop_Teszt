@@ -4,54 +4,57 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KorHenger
+namespace KörHenger
 {
-    class Kor
+    public class Kör
     {
-        //Az osztály feladata egy kör területének és kerületének kiszámítása
+        protected double sugar,
+            terület,
+            kerület;
 
-        //Osztályváltozók
-        protected double sugar, kerület, terület;
+        public Kör() { }
 
-        //Konstruktorok
-        public Kor() { }
-
-        public Kor(double r)
+        public Kör(double r)
         {
-            setDatas(r);
+            this.sugar = r;
         }
-
-        private double kalkKerulet(double r)
-        {
-            return Math.Round(2 * r * Math.PI, 2);
-        }
-
-        private double kalkTerulet(double r)
-        {
-            return Math.Round(Math.Pow(r, 2) * Math.PI, 2);
-        }
-
-        public double GetSugar() { return this.sugar;}
-        public double GetKerulet() { return this.kerület;}
-        public double GetTerulet() { return this.terület;}
 
         public void SetSugar(double r)
         {
-            setDatas(r);
+            this.sugar = r;
         }
 
-        private void setDatas(double r)
+        public void SetTerület()
         {
-            this.sugar = r;
-            this.kerület = kalkKerulet(r);
-            this.terület = kalkTerulet(r);
+            this.terület = Math.Round(Math.Pow(this.sugar, 2) * Math.PI, 2);
+        }
+
+        //Osztályváltozók
+        private double sugar, kerület, terület;
+
+        //Konstruktorok
+        public Kor() { }
+        public Kor(double r)
+        {
+            return this.terület;
+        }
+
+        public double GetKerület()
+        {
+            return this.kerület;
+        }
+
+        public double GetSugár()
+        {
+            return this.sugar;
         }
     }
 
-    class Henger : Kor
+    class Henger : Kör
     {
         // Osztályváltozók
-       private double térfogat, magasság;
+        private double térfogat,
+            magasság;
 
         // Konstruktor
         public Henger(double s, double m)
@@ -61,8 +64,8 @@ namespace KorHenger
             this.magasság = m;
 
             // Számítások elvégzése
-            GetKerulet();
-            GetTerulet();
+            SetKerület();
+            SetTerület();
             this.térfogat = this.terület * this.magasság;
         }
 
@@ -70,5 +73,6 @@ namespace KorHenger
         {
             return this.térfogat;
         }
+
     }
 }
