@@ -26,8 +26,33 @@ namespace KörHenger
             // kiír(k2);
 
             // 1. henger
-            Henger h1 = new Henger(15, 34);
-            kiírHenger(h1);
+            try
+            {
+                Henger h1 = new Henger(15, 34);
+                kiírHenger(h1);
+            }
+            catch (ArgumentException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            catch (ArithmeticException e)
+            {
+                Console.WriteLine($"Aritmetikai hiba {e.Message}!");
+            }
+
+            
+            try
+            {
+                Henger h2 = new Henger(-1, 30);
+                kiírHenger(h2);
+            }
+            catch (ArgumentException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            
+            
+            
 
             Console.ReadKey();
         }
