@@ -38,6 +38,11 @@ namespace KörHenger
             return this.kerület;
         }
 
+        public double GetTerület()
+        {
+            return this.terület;
+        }
+
         public double GetSugár()
         {
             return this.sugar;
