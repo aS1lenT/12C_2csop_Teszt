@@ -72,6 +72,7 @@ namespace KörHenger
         {
             return this.térfogat;
         }
+   
 
     }
 }
