@@ -29,16 +29,10 @@ namespace KörHenger
             this.terület = Math.Round(Math.Pow(this.sugar, 2) * Math.PI, 2);
         }
 
-        //Osztályváltozók
-        private double sugar, kerület, terület;
-
-        //Konstruktorok
-        public Kor() { }
-        public Kor(double r)
+        public void SetKerület()
         {
-            return this.terület;
+            this.kerület = Math.Round(2 * this.sugar * Math.PI, 2);
         }
-
         public double GetKerület()
         {
             return this.kerület;
