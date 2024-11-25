@@ -19,7 +19,7 @@ namespace KörHenger
             // kiír(k1);
 
             // 2. példány
-            Kör k2 = new Kör(58);
+            Kör k2 = new Kör(5);
             k2.SetKerület();
             k2.SetTerület();
 
