@@ -18,7 +18,7 @@ namespace KorHenger_UnitTest
             // Act - Végrehajtás
             kör.SetKerület();
             double kapottEredm = kör.GetKerület();
-
+            
             // Assert - Kiértékelés
             Assert.AreEqual(vártEredm, kapottEredm);
         }
