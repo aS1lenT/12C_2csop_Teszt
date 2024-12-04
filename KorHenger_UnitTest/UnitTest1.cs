@@ -22,10 +22,21 @@ namespace KorHenger_UnitTest
             // Assert - Kiértékelés
             Assert.AreEqual(vártEredm, kapottEredm);
         }
-
+        
         [TestMethod]
         public void Terület_teszt()
         {
+            // Arrange - Feltételek beállítása
+            double sugár = 5;
+            Kör kör = new Kör(sugár);
+            double vártEredm = 78.54;
+
+            // Act - Végrehajtás
+            kör.SetTerület();
+            double kapottEredm = kör.GetTerület();
+
+            // Assert - Kiértékelés
+            Assert.AreEqual(vártEredm, kapottEredm);
         }
     }
 }
