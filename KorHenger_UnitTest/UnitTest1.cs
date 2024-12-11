@@ -36,7 +36,7 @@ namespace KorHenger_UnitTest
             double kapottEredm = kör.GetTerület();
 
             // Assert - Kiértékelés
-            Assert.AreEqual(vártEredm, kapottEredm); 
+            Assert.AreEqual(vártEredm, kapottEredm);
         }
     }
 }
