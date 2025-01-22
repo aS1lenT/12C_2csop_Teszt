@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.34301.259
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teszt", "Teszt\Teszt.csproj", "{5B74D6F1-3C84-49AA-870D-F3491D8FD456}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KorHenger-Test", "KorHenger-Test\KorHenger-Test.csproj", "{CBBFC27E-8A7A-40B9-8B11-94D48FBEB08C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KorHenger_UnitTest", "KorHenger_UnitTest\KorHenger_UnitTest.csproj", "{D22CD96F-E970-4B36-8978-B1D876883912}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "atvalt", "atvalt\atvalt.csproj", "{1936B7BD-FB69-4876-98B3-88C9062332AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{D22CD96F-E970-4B36-8978-B1D876883912}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D22CD96F-E970-4B36-8978-B1D876883912}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D22CD96F-E970-4B36-8978-B1D876883912}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1936B7BD-FB69-4876-98B3-88C9062332AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1936B7BD-FB69-4876-98B3-88C9062332AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1936B7BD-FB69-4876-98B3-88C9062332AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1936B7BD-FB69-4876-98B3-88C9062332AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
