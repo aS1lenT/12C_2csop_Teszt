@@ -32,7 +32,7 @@ namespace atvalt
             }
         }
 
-        private bool isDecimal(string szam)
+        public bool isDecimal(string szam)
         {
             // A decimálist úgy vizsgáljuk, hogy konvertálható -e
             bool eredm = true;
@@ -59,7 +59,7 @@ namespace atvalt
             }
         }
 
-        private bool isBinaris(string szam)
+        public bool isBinaris(string szam)
         {
             bool eredm = true; // Mivel az elvárás szerint bináris szám az első karaktere 0!
             for (int i = 1; i < szam.Length; i++)
