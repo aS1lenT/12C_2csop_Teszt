@@ -29,14 +29,17 @@ namespace Atvalt_UnitTest
         }
 
         [TestMethod]
-        public void iSdecimal_False()
+        public void iSdecimal_False() //Ha szám, de bináris
         {
+            // Arrange - Tesztkörnyezet beállítása
             string szoveg = "!";
             bool vartEredm = false,
-                kapottEredm = true;
+                kapottEredm = false;
 
+            // Act - A vizsgált metódus végrehajtása
             kapottEredm = atvalt.isDecimal(szoveg);
 
+            // Assert - Az eredmény kiértékelése
             Assert.AreEqual(kapottEredm, vartEredm);
         }
 
