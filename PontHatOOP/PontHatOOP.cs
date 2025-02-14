@@ -26,7 +26,7 @@ namespace PontHatOOP
         }
 
         // Osztályzat meghatározása
-        private int MegallapitasOsztalyzat()
+        public int MegallapitasOsztalyzat()
         {
             if (Pontszam >= 90)
             {
