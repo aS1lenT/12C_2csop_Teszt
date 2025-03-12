@@ -26,10 +26,11 @@ namespace KorTDD_Test
             Assert.AreEqual(kapottEredm, vartEredm);
         }
 
-        [TestMethod]
+        [TestMethod, ExpectedException(typeof(ArgumentException))]
         public void setKerulet_teszt_False_alatt()
         {
             // Arrange
+            kor.setSugar(0);
             double sugar = kor.getSugar();
             double vartEredm = 25.11,
                 kapottEredm;
@@ -98,6 +99,51 @@ namespace KorTDD_Test
 
             // Act
             kapottEredm = kor.setTerulet(sugar);
+
+            // Assert
+            Assert.AreNotEqual(kapottEredm, vartEredm);
+        }
+
+        [TestMethod]
+        public void setSugar_teszt_True()
+        {
+            // Arrange
+            double sugar = kor.getSugar();
+            double vartEredm = 4.0,
+                kapottEredm;
+
+            // Act
+            kapottEredm = kor.getSugar();
+
+            // Assert
+            Assert.AreEqual(kapottEredm, vartEredm);
+        }
+
+        [TestMethod]
+        public void setSugar_teszt_False_alatt()
+        {
+            // Arrange
+            double sugar = kor.getSugar();
+            double vartEredm = 3.99,
+                kapottEredm;
+
+            // Act
+            kapottEredm = kor.getSugar();
+
+            // Assert
+            Assert.AreNotEqual(kapottEredm , vartEredm);
+        }
+
+        [TestMethod]
+        public void setSugar_teszt_False_felett()
+        {
+            // Arrange
+            double sugar = kor.getSugar();
+            double vartEredm = 4.01,
+                kapottEredm;
+
+            // Act
+            kapottEredm = kor.getSugar();
 
             // Assert
             Assert.AreNotEqual(kapottEredm, vartEredm);
